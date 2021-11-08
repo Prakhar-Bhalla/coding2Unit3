@@ -19,3 +19,20 @@ function getMeals() {
 }
 
 getMeals();
+
+let btn = document.getElementsByTagName("button");
+btn[0].onclick = function(){
+    alert("Your order is accepted");
+    setTimeout(function() {
+        alert("Your order is being cooked");
+    }, 3000)
+    setTimeout(function() {
+        alert("Your order is ready");
+    }, 8000) 
+    setTimeout(function() {
+        alert("Order out for delivery");
+    }, 10000)
+    setTimeout(function() {
+        alert("Order delivered");
+    }, 12000)
+}

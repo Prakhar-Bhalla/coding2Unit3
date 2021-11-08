@@ -12,10 +12,16 @@ async function signup(e) {
 
     let user = JSON.stringify(data);
     
-    let res = await fetch("https://github.com/masai-school/api-mocker/wiki/Authentication-API" {
-        method =  "POST"
-        body = user
-    })
-    
+    let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
+        method: `POST`,
+        body: user,
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+    console.log(res);
+    alert(res.message);
 }
+
+
 
