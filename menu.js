@@ -10,7 +10,7 @@ async function getMeals() {
         let image = document.createElement("img");
         image.src = meal.strMealThumb;
         imageDiv.style.width = "100%";
-        imageDiv.style.height = "200px";
+        imageDiv.style.height = "270px";
         imageDiv.append(image);
         let name = document.createElement("p");
         name.innerText = meal.strMeal;

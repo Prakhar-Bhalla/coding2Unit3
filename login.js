@@ -8,7 +8,7 @@ async function login(e) {
 
     let user = JSON.stringify(data);
     
-    let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
+    let res = await fetch("http://masai-api-mocker.herokuapp.com/auth/login", {
         method: `POST`,
         body: user,
         headers: {
