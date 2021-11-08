@@ -1,6 +1,5 @@
 let container = document.getElementById("container");
 function getMeals() {
-    container.innerHTML = null;
     let meals = JSON.parse(localStorage.getItem("foodCart"));
     console.log(meals);
     meals.forEach(meal => {
@@ -35,4 +34,5 @@ btn[0].onclick = function(){
     setTimeout(function() {
         alert("Order delivered");
     }, 12000)
+    container.innerHTML = null;
 }

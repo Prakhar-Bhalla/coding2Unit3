@@ -36,4 +36,5 @@ function addtoCart(meal) {
     let crt = JSON.parse(localStorage.getItem("foodCart"));
     crt.push(meal);
     localStorage.setItem("foodCart", JSON.stringify(crt));
+    alert("Added to cart");
 }
