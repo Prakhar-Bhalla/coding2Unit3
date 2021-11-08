@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        #signupDiv {
+            width: 40%;
+            margin: 40px auto;
+            border: 2px solid purple;
+            padding: 10px;
+        }
+        input {
+            width: 95%;
+            outline: none;
+            margin-top: 10px;
+            height: 30px;
+        }
+        button{
+            width: 95%;
+            height: 30px;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="signupDiv">
+        <form onsubmit="signup(event)">
+            <input placeholder="Enter Your Name"/>
+            <input placeholder="Enter Your Email"/>
+            <input placeholder="Username">
+            <input placeholder="Password" type="password"/>
+            <input placeholder="Mobile Number" type="number"/>
+            <button type="submit">Proceed</button>
+        </form> 
+    </div>
+    <script src="./signup.js"></script>
+</body>
+</html>
