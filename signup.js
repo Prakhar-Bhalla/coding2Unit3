@@ -1,4 +1,4 @@
-function signup(e) {
+async function signup(e) {
     e.preventDefault();
     let details = document.getElementsByTagName("input");
     let data = {
@@ -12,6 +12,10 @@ function signup(e) {
 
     let user = JSON.stringify(data);
     
+    let res = await fetch("https://github.com/masai-school/api-mocker/wiki/Authentication-API" {
+        method =  "POST"
+        body = user
+    })
     
 }
 
