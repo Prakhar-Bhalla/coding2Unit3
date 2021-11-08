@@ -1,4 +1,17 @@
 function signup(e) {
     e.preventDefault();
-    console.log("working");
+    let details = document.getElementsByTagName("input");
+    let data = {
+        name: details[0].value,
+        email: details[1].value,
+        password: details[3].value,
+        username: details[2].value,
+        mobile: details[4].value,
+        description: "Masai Student"
+    };
+
+    let user = JSON.stringify(data);
+    
+    
 }
+
